@@ -129,8 +129,8 @@ ol { list-style: none; padding: 0; }
 .career li { display: flex; flex-direction: column; gap: 18px; }
 .signal { display: flex; align-items: center; height: 28px; }
 .signal svg { fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.signal .buffer { flex: 0 0 40px; stroke: var(--orange); stroke-width: 2; }
-.signal .sine { min-width: 0; height: 28px; overflow: hidden; stroke: var(--yellow); stroke-width: 1.5; stroke-opacity: 0.8; }
+.signal .buffer { flex: 0 0 40px; stroke: var(--orange); stroke-width: 2; stroke-linecap: butt; }
+.signal .sine { min-width: 0; height: 28px; stroke: var(--yellow); stroke-width: 1.5; stroke-opacity: 0.8; }
 .signal .sine-in { flex: 1 1 0; }
 .signal .sine-out { flex: 1 1 28px; }
 .career li:first-child .sine-in { -webkit-mask-image: linear-gradient(90deg, transparent, #000 70%); mask-image: linear-gradient(90deg, transparent, #000 70%); }
@@ -191,7 +191,12 @@ ol { list-style: none; padding: 0; }
   81% { transform: translateX(5px) skewX(-0.3deg); }
 }
 
+@media (max-width: 1040px) {
+  .career ol { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 600px) {
+  .career ol { grid-template-columns: minmax(0, 1fr); }
   .hero-lines { width: 640px; height: 320px; opacity: 0.38; }
   .hero-wave { height: 80px; }
   .site-nav { gap: 8px 28px; }
