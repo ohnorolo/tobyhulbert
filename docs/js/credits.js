@@ -117,5 +117,7 @@ window.VIDEOS = [
   { id: "mOfK5zNs5Kk", title: "Home Counties, Uptight", note: "SubCat Sessions · Audio" },
   { id: "B7ehy6ooPZI", title: "Oh Wonder, High On Humans", note: "Abbey Road Piano Sessions · Recorded" },
   { id: "NVa6Vs6S_zE", title: "Lonnie Gunn, Good Girls Go To Heaven", note: "SubCat Sessions · Recorded and mixed" },
-  { id: "R8ZSv1NSfTU", title: "Saint Clair, Warm", note: "SubCat Sessions · Recorded and mixed" }
+  { id: "R8ZSv1NSfTU", title: "Saint Clair, Warm", note: "SubCat Sessions · Recorded and mixed" },
+  { id: "Ok9Yr8o-Ufk", title: "Do Nothing, Summer Of Hate", note: "SubCat Sessions · Recorded and mixed" },
+  { id: "cCpVArz07B8", title: "Swim Deep, How Many Love Songs Have Died In Vegas?", note: "SubCat Sessions · Recorded and mixed" }
 ];
