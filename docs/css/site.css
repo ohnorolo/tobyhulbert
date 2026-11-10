@@ -128,10 +128,13 @@ ol { list-style: none; padding: 0; }
 .career ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 44px 0; }
 .career li { display: flex; flex-direction: column; gap: 18px; }
 .signal { display: flex; align-items: center; height: 28px; }
-.signal svg { fill: none; stroke: var(--orange); stroke-linecap: round; stroke-linejoin: round; }
-.signal .buffer { flex: 0 0 40px; stroke-width: 2; }
-.signal .sine { flex: 1 1 auto; min-width: 0; height: 28px; overflow: hidden; stroke-width: 1.5; stroke-opacity: 0.7; }
-.career li:last-child .sine { -webkit-mask-image: linear-gradient(90deg, #000 30%, transparent); mask-image: linear-gradient(90deg, #000 30%, transparent); }
+.signal svg { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.signal .buffer { flex: 0 0 40px; stroke: var(--orange); stroke-width: 2; }
+.signal .sine { min-width: 0; height: 28px; overflow: hidden; stroke: var(--yellow); stroke-width: 1.5; stroke-opacity: 0.8; }
+.signal .sine-in { flex: 1 1 0; }
+.signal .sine-out { flex: 1 1 28px; }
+.career li:first-child .sine-in { -webkit-mask-image: linear-gradient(90deg, transparent, #000 70%); mask-image: linear-gradient(90deg, transparent, #000 70%); }
+.career li:last-child .sine-out { -webkit-mask-image: linear-gradient(90deg, #000 30%, transparent); mask-image: linear-gradient(90deg, #000 30%, transparent); }
 .step { display: flex; flex-direction: column; gap: 10px; padding-right: 28px; }
 .step h3 { font-family: var(--condensed); font-size: 38px; line-height: 1; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; }
 .step p { font-size: 16px; line-height: 1.5; opacity: 0.78; }
