@@ -24,3 +24,9 @@ The image then appears next to the pointer when someone hovers that credit.
 ## Do not delete
 
 `docs/CNAME` and `docs/.nojekyll`. The first holds the domain name.
+
+## If a change does not show up
+
+Browsers keep the stylesheet and scripts for about ten minutes. Wait, or hold Shift and press reload.
+
+After a change to the design (`site.css` or `site.js`), raise the number after `?v=` on the three lines in `docs/index.html` that load `site.css`, `credits.js` and `site.js`. That makes every browser fetch the new files straight away.
