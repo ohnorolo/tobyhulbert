@@ -127,15 +127,10 @@ ol { list-style: none; padding: 0; }
 .career .wrap { padding-top: 112px; }
 .career ol { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 44px 0; }
 .career li { display: flex; flex-direction: column; gap: 18px; }
-.signal { display: flex; align-items: center; height: 28px; }
-.signal svg { flex: 0 0 84px; fill: none; stroke: var(--yellow); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.signal .base { stroke-opacity: 0.38; }
-.signal .run { stroke-width: 3; stroke-dasharray: 280 720; animation: pulse 2.8s linear infinite; }
-.signal span { flex: 1 1 auto; height: 2px; background: rgba(255, 213, 25, 0.38); }
-.career li:last-child .signal span { background: linear-gradient(90deg, rgba(255, 213, 25, 0.38), rgba(255, 213, 25, 0)); }
-.career li:nth-child(2) .run { animation-delay: 0.7s; }
-.career li:nth-child(3) .run { animation-delay: 1.4s; }
-.career li:nth-child(4) .run { animation-delay: 2.1s; }
+.signal { display: flex; align-items: center; height: 49px; }
+.signal svg { flex: 0 0 126px; fill: none; stroke: var(--orange); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.signal span { flex: 1 1 auto; height: 2px; background: rgba(246, 84, 38, 0.55); }
+.career li:last-child .signal span { background: linear-gradient(90deg, rgba(246, 84, 38, 0.55), rgba(246, 84, 38, 0)); }
 .step { display: flex; flex-direction: column; gap: 10px; padding-right: 28px; }
 .step h3 { font-family: var(--condensed); font-size: 38px; line-height: 1; font-weight: 600; letter-spacing: 0.02em; text-transform: uppercase; }
 .step p { font-size: 16px; line-height: 1.5; opacity: 0.78; }
@@ -203,6 +198,6 @@ ol { list-style: none; padding: 0; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .hero-lines, .hero-wave .pulse, .signal .run { animation: none; }
+  .hero-lines, .hero-wave .pulse { animation: none; }
   .credit, #credit-art { transition: none; }
 }
