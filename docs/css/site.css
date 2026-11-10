@@ -159,9 +159,10 @@ ol { list-style: none; padding: 0; }
 .about-photo { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 .about-text { display: flex; flex-direction: column; gap: 22px; font-size: 18px; line-height: 1.6; color: var(--ink-soft); }
 .about-text p:first-child { font-size: 24px; line-height: 1.4; color: var(--ink); }
-.live-room { margin: 14px 0 0; display: flex; flex-direction: column; gap: 12px; }
-.live-room img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.live-room figcaption { font-size: 15px; line-height: 1.5; opacity: 0.78; }
+.about-figures { margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+.about-figures figure { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.about-figures img { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+.about-figures figcaption { font-size: 15px; line-height: 1.5; opacity: 0.78; }
 
 /* Contact */
 .contact .wrap { padding: 128px 0 88px; display: flex; flex-direction: column; gap: 36px; }
