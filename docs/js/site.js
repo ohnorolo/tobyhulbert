@@ -17,10 +17,8 @@
     return node;
   }
 
-  function row(credit, index) {
+  function row(credit) {
     var li = el("li", "credit");
-    var n = index + 1;
-    li.appendChild(el("span", "credit-n", (n < 10 ? "0" : "") + n));
     li.appendChild(el("span", "credit-title", credit.title));
     li.appendChild(el("span", "credit-project", credit.project));
     li.appendChild(el("span", "credit-role", credit.role));
@@ -31,7 +29,7 @@
   function group(label, credits, max) {
     var frag = document.createDocumentFragment();
     if (label) { frag.appendChild(el("li", "credit-heading", label)); }
-    credits.slice(0, max).forEach(function (credit, i) { frag.appendChild(row(credit, i)); });
+    credits.slice(0, max).forEach(function (credit) { frag.appendChild(row(credit)); });
     return frag;
   }
 
