@@ -113,11 +113,11 @@ window.CREDITS = {
 /* Live session videos shown under "Watch". id is the part after v= in the YouTube link. */
 window.VIDEOS = [
   { id: "NwVtIPeYIeQ", title: "Yussef Dayes X Alfa Mist, Love Is The Message", note: "Live at Abbey Road · Recorded" },
-  { id: "FLqJqhRw_-8", title: "Oh Wonder, Ultralife", note: "Abbey Road Piano Sessions · Recorded" },
   { id: "mOfK5zNs5Kk", title: "Home Counties, Uptight", note: "SubCat Sessions · Audio" },
-  { id: "B7ehy6ooPZI", title: "Oh Wonder, High On Humans", note: "Abbey Road Piano Sessions · Recorded" },
+  { id: "9P0SB0rLHcE", title: "Lonnie Gunn, Dog In A Hot Car", note: "SubCat Sessions · Recorded and mixed" },
   { id: "NVa6Vs6S_zE", title: "Lonnie Gunn, Good Girls Go To Heaven", note: "SubCat Sessions · Recorded and mixed" },
   { id: "R8ZSv1NSfTU", title: "Saint Clair, Warm", note: "SubCat Sessions · Recorded and mixed" },
   { id: "Ok9Yr8o-Ufk", title: "Do Nothing, Summer Of Hate", note: "SubCat Sessions · Recorded and mixed" },
-  { id: "cCpVArz07B8", title: "Swim Deep, How Many Love Songs Have Died In Vegas?", note: "SubCat Sessions · Recorded and mixed" }
+  { id: "cCpVArz07B8", title: "Swim Deep, How Many Love Songs Have Died In Vegas?", note: "SubCat Sessions · Recorded and mixed" },
+  { id: "FLqJqhRw_-8", title: "Oh Wonder, Ultralife", note: "Abbey Road Piano Sessions · Recorded" }
 ];
